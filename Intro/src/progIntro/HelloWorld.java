@@ -11,6 +11,8 @@ public class HelloWorld {
 	// Main method
 	public static void main(String[] args) {
 		message("Hello World!", 3);
+		
+		System.exit(0);
 	}
 
 }

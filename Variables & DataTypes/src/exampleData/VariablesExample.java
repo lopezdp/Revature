@@ -21,6 +21,8 @@ public class VariablesExample {
 		System.out.println("But what happens when we divide integers: 5 / 2");
 		System.out.println(myInt / myByte);
 		System.out.println("There is no decimal and no remainder!");
+		
+		System.exit(0);
 	}
 
 }
