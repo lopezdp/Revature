@@ -16,6 +16,8 @@ public class MethodOverriding {
 		
 		System.out.println("Make the Dog Object Speak: ");
 		makeItTalk(myDog);
+		
+		myDog.chaseAmbulance();
 	
 	}
 
@@ -34,4 +36,10 @@ class Dog extends Animal {
 	public void speak() {
 		System.out.println("Woof! Woof! \n");
 	}
+	
+	public void chaseAmbulance() {
+		System.out.println("Dog chases ambulance for 5 blocks!!");
+		super.speak();
+	}
+	
 }
