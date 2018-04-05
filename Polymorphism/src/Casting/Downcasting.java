@@ -22,6 +22,17 @@ public class Downcasting {
 		} else {
 			System.out.println("animalRef does not point to a Dog object!!!");
 		}
+		
+		/*
+		for (int count = 1; count <  5; count++) {
+		    count = count + count;
+		    System.out.println("count: " + count);
+		}*/
+		
+		int count = 0;
+		while (count < 2) {
+		    System.out.print("Hi ");
+		}
 	}
 }
 
