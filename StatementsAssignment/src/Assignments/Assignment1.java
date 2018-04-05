@@ -9,7 +9,7 @@ public class Assignment1 {
 		
 		while(true) {
 			
-			System.out.println("Enter an integer: ");
+			System.out.println("Enter an integer: \n");
 			
 			int num = input.nextInt();		
 			
