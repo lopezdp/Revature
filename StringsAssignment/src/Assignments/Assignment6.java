@@ -1,6 +1,6 @@
 package Assignments;
 
-public class Assignmet6 {
+public class Assignment6 {
 	
 	/*
 	 * 
