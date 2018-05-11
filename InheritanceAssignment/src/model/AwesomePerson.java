@@ -4,6 +4,8 @@ import model.Person;
 public class AwesomePerson extends Person {
 	
 	public AwesomePerson() {
+		System.out.println("AP Names.");
+
 		
 	}
 	

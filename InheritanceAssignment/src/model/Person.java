@@ -6,6 +6,8 @@ public class Person {
 	protected int age;
 	
 	public Person(){
+		System.out.println("P Names.");
+
 		
 	}
 	
