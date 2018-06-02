@@ -3,20 +3,25 @@ package Java8Features;
 import java.util.ArrayList;
 
 public class Java8InterfaceExample {
-	Domesticated myDog = new Dog();
-
-
+	
+	public static void main(String[] args) {
+		Domesticated myDog = new Dog();
+		Domesticated.register(myDog);
+		myDog.doWork();
+		myDog.doWork("Play fetch!");
+		System.out.println("Domesticated Animals: " + Domesticated.animals);
+	}
 }
 
 interface Domesticated {
 	ArrayList<String> animals = new ArrayList<>();
 	ArrayList<String> plants = new ArrayList<>();
 	
-	Static void register(Domesticated species) {
+	static void register(Domesticated species) {
 		if(species instanceof Animal) {
-			animals.add(species.getClass().getName());)
+			animals.add(species.getClass().getName());
 		} else if(species instanceof Plant) {
-			plants.add(species.getClass.getName());
+			plants.add(species.getClass().getName());
 		}
 	}
 	
@@ -31,13 +36,13 @@ abstract class Animal {};
 abstract class Plant {};
 
 class Dog extends Animal implements Domesticated {
-	public void eat() {
+	public void doWork() {
 		System.out.println("I hunt for food!");
 	}
 }
 
 class Wheat extends Plant implements Domesticated {
-	public void eat() {
+	public void doWork() {
 		System.out.println("I produce large quantities of grain!");
 	}
 }
