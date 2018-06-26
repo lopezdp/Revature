@@ -1,8 +1,6 @@
 package monitoring;
 
 import java.beans.ConstructorProperties;
-import java.beans.ConstructorProperties;
-import java.io.*;
 
 public class Habitat {
 	private String title;
@@ -11,8 +9,9 @@ public class Habitat {
 	private String cleanliness;
 	private String alert;
 	
-	@ConstructorProperties({"habitat", "temp", "cleanliness", "alert"})
-	public Habitat (String habitat, String temp, String cleanliness, String alert) {
+	@ConstructorProperties({"title", "habitat", "temp", "cleanliness", "alert"})
+	public Habitat (String title, String habitat, String temp, String cleanliness, String alert) {
+		this.title = title;
 		this.habitat = habitat;
 		this.temp = temp;
 		this.cleanliness = cleanliness;

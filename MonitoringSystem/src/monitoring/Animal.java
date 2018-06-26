@@ -3,7 +3,6 @@
  */
 package monitoring;
 import java.beans.ConstructorProperties;
-import java.io.*;
 
 /**
  * @author LopezDP
@@ -18,14 +17,19 @@ public class Animal {
 	private String feedSchedule;
 	private String alert;
 
-	@ConstructorProperties({"species", "name", "age", "health", "feedSchedule", "alert"})
-	public Animal(String species, String name, int age, String health, String feedSched, String alert) {
+	@ConstructorProperties({"title", "species", "name", "age", "health", "feedSchedule", "alert"})
+	public Animal(String title, String species, String name, int age, String health, String feedSched, String alert) {
+		this.title = title;
 		this.species = species;
 		this.name = name;
 		this.age = age;
 		this.health = health;
-		this.feedSchedule = feedSchedule;
+		this.feedSchedule = feedSched;
 		this.alert = alert;
+	}
+
+	public Animal() {
+		// TODO Auto-generated constructor stub
 	}
 
 	// Accessor Methods
